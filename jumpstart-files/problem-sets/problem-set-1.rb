@@ -2,6 +2,8 @@
 
 # Write a function that given an array, returns another array with each of the numbers multiplied by two. Don't change the original array, make sure you construct a copy!
 def array_times_two(array)
+  new = array.map { |el| el*2 }
+  return new
 end
 
 # Tests — these should all spit out true!
@@ -16,6 +18,7 @@ puts dont_change_this == [3, 4, 5]
 
 # Write a function that given an array, now CHANGES each of the numbers to be twice as big. This should mutate the original array!
 def array_times_two!(array)
+  array.map! { |el| el*2 }
 end
 
 # Tests
